@@ -1,0 +1,29 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: SpringBootApiApplication
+  # datasource config (auto config)
+  datasource:
+    url: jdbc:postgresql://localhost:5432/exam_iasf
+    username: admin
+    password: 207205
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+
