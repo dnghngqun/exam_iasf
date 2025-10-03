@@ -17,6 +17,17 @@ spring:
     hibernate:
       ddl-auto: update
       dialect: org.hibernate.dialect.PostgreSQLDialect
+  springdoc:
+    swagger-ui:
+      path: /swagger-ui.html
+    api-docs:
+      path: /v3/api-docs
+    info:
+      title: "Employee Salary Management API"
+      description: "API for managing employee information and calculating salaries."
+      version: "1.0.0"
+    paths-to-match:
+      - /api/**
 logging:
   level:
     org:
