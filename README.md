@@ -32,6 +32,7 @@ Dự án quản lý lương với kiến trúc full-stack sử dụng Spring Boo
    - **Frontend (React)**: http://localhost:3000
    - **Backend API**: http://localhost:8080
    - **Database**: localhost:5433 (PostgreSQL)
+   - **Swagger**: http://localhost:8080/swagger-ui.html
 
 ### Dừng dự án
 
