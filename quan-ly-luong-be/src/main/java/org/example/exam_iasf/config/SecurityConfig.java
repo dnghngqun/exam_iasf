@@ -24,7 +24,7 @@ public class SecurityConfig {
                                 "/webjars/**"
                         ).permitAll()
                         // Yêu cầu xác thực cho tất cả các request khác
-                        .anyRequest().authenticated()
+                        .anyRequest().permitAll()
                 );
         return http.build();
     }
